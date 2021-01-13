@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%    GemPhase1_US.tex
+%
+%    GEMINI OBSERVATORY
+%    US PHASE I OBSERVING PROPOSAL TEMPLATE
+%    FOR SEMESTER 2020B
+%
+%    Version 1.6. August 27, 2013
+%
+%    Guidelines and assistance
+%    =========================
+%    2020A Announcement Web Page:
+%
+%    http://www.gemini.edu/sciops/observing-gemini/2020a-call-proposals
+%
+%    Please contact the Gemini Help Desk if you need assistance.
+%    http://www.gemini.edu/sciops/helpdesk/submit-general-helpdesk-request
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Please do not modify or delete this line.
+\documentclass[11pt]{article}
+\usepackage{GemPhase1_US21A}
+
+\usepackage{graphics,graphicx}
+
+\usepackage{tabulary}
+
+\usepackage{helvet}
+\usepackage{sidecap}
+\setlength{\parindent}{1cm}
+
+% Please do not modify or delete this line.
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Or use includegraphics for example
+
+%
+% Note that the Web form provides several useful and simple figure
+% options.
+
+\sciencejustification
+ \fontfamily{ptm}\selectfont{
+
+
+Exoplanet atmospheres research has grown immensely in the last 5 years, owing to the success of transit spectroscopy.  A major barrier remains. Stellar contamination from unocculted starspots (and faculae) produces wavelength-dependent transit depths that mimic genuine exoplanet signals.  The problem is especially acute in young, heavily spotted stars.  In this IGRINS 2021A program, we will quantify the total starspot coverage fraction for a sample of ~15-25 young (5-300 Myr) GKM stars.  We will use probabilistic spectral decomposition (Gully-Santiago et al. 2017) to measure the starspot temperature contrast and areal filling factor, the key metrics controlling stellar contamination.  Contemporaneous TESS lightcurves will inform the phase of rotational modulation and constrain longitudinal surface structure symmetries.
+
+\setlength{\parindent}{0cm}
+\textbf{References:}
+{\footnotesize \textbf{Czekala et al. 2015} ApJ, 812, 128.; \textbf{Gully-Santiago et al. 2017} ApJ, 836, 200.; \textbf{Rackham et al. 2018} ApJ, 853, Issue 2, id. 122}
+\setlength{\parindent}{1cm}
+
+\clearpage
+
+
+% EXPERIMENTAL DESIGN
+%
+% This section should consist of text only (no figures).
+% There is a limit of one page of printed text.
+%
+% Describe your overall observational program.  How will these
+% observations contribute toward the accomplishment of the goals
+% outlined in the science justification?  Include information such as why
+% the specific  targets were selected, the sample size, the analysis, etc.
+% Describe any necessary calibrations in addition to the baseline calibrations.
+% If you've requested long-term status, justify why this is necessary for successful
+% completion of the science.
+%
+% NOTE: In previous versions of the proposal form, this section
+% requested details about the use of non-NOAO observing facilities.
+% Such information should now be entered in the following "Other
+% Facilities" section.
+
+\expdesign
+
+
+The parent sample consists of over 1200 Nearby Young Moving Group (NYMG) confirmed or candidate members (Gagne et al. 2018a, 2018b, 2018c).  Of these, about 970 will be contemporaneously or near-contemporaneously observed in TESS Sectors 34 - 39 (Feb - June 24) with airmass$<2$ from Gemini South. We restricted the sample to G, K, and early M dwarfs (M0, M1, or M2), since the spot spectrum for these will be most discernable and reasonably well-informed from template spectra (e.g. Fang et al. 2016).  We crafted precision lightcurves for the entire sample from 30-minute cadence TESS Cycle 1 FFI data from 2018-2019.  We computed the 50$^{th}$ and 90$^{th}$ percentile range (denoted $i50$ and $i90$)for these lightcurves.  We selected a high-amplitude variable subset of 62 sources in the range $0.07 < i90 < 0.80$; the lower bound was motivated by the desire to detect spectral variability in IGRINS from visit-to-visit by exhibiting large enough changes form lightcurve peak and trough, and the upper bound was set to bias towards cool spot-dominated lightcurves that are unlikely to induce extremely large amplitudes of variations.  These 62 objects were individually inspected in their TESS Target Pixel Files with Gaia DR2 overlays to assess the extent of background source contamination and source confusion.  A final target list of 18 objects met all of these criteria.  The youth and proximity of these sources yield relatively bright ($H<10$) exemplars for their spectral subclasses, making them well-suited to Band 3 observations under poor observing conditions.  We will typically observe each source between 2 and 5 times.
+
+% PROPRIETARY PERIOD
+%
+% Enter the proprietary period for your data between the braces.
+% The normal duration is 12 months from when the data are taken at
+% the telescope.  Requests for longer proprietary periods must
+% be approved by the NOAO Director.
+
+\proprietaryperiod{12 months}
+
+
+% OTHER FACILITIES OR RESOURCES
+%
+% This section should consist of text only (no figures).
+% Please limit to about a half page of printed text.
+%
+% 1) We are interested in understanding how observations made through
+% NOAO observing opportunities complement or support data from other
+% facilities both on the ground and in space.   We will use this
+% information to guide the evolution of the NOAO program; it will not
+% affect the success of your proposal in the evaluation process.
+% Please describe how the proposed observations complement data from
+% other facilities, including private observatories and both ground-
+% and space-based telescopes.  In addressing this question, take a
+% broad view of your research program.  Are the data to be obtained
+% through this proposal going to help select samples for detailed
+% observations using larger telescopes or from space observatories?
+% Are these data going to be directly combined with data obtained
+% elsewhere to test a hypothesis?  Will these observations have
+% relevance to other observations, even though the proposal stands
+% on its own?  For each of these other facilities, indicate the nature
+% of the observations (yours or those of others), and describe the
+% importance of the observations proposed here in the context of the
+% entire program.
+%
+% 2) Do you currently have a grant that would provide resources
+% to support the data processing, analysis, and publication of the
+% observations proposed here?
+
+\otherfacilities
+
+
+% PAST USE
+%
+% How effectively have you used the facilities available through NOAO
+% in the past?
+% List allocations of telescope time on facilities available through
+% NOAO to the Principal Investigator during the past 2 years, together
+% with the current status of the data (cite publications where
+% appropriate).  Mark any allocations of time related to the current
+% proposal with a \relatedwork{} command.
+%
+% For example:
+%\thepast
+%\begin{tabular}{lll}
+%NOAO Proposal ID & Gemini ID & Status \\
+%================ & ========= & ====== \\
+%2010B-0700 & GS-2010B-Q-1 & Published in Smith 2011, ApJ, 1, 1. \\
+%\relatedwork{2011A-0700} & GS-2011A-Q-50 & Data obtained, reduction underway. \\
+%\end{tabular}
+
+\thepast
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% OBSERVING RUN DETAILS - REQUIRED FOR EACH INSTRUMENT USED
+%
+% Describe the observations to be made during this observing run in
+% the \technicaldescription section. Justify the specific telescope,
+% the number of nights, the instrument, and the lunar phase requested.
+% Use the Gemini Integration Time Calculator (ITC) for a typical source for each
+% instrument requested. Save the ITC  output as a text file and include that in this
+% section. The ITC pages will not count against the page limits.
+% Specify the total time needed (including overheads), and the minimum requested
+% time. If you are applying for instruments on both Gemini North and Gemini South,
+% please state the time request for each site.
+
+\technicaldescription
+
+
+We request ABBA nod patterns for all sources.  All are bright enough for only a single ABBA quad sequence.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% BAND 3 INFORMATION
+% If you are applying for queue time, your ranking may place the program in
+% Band 3.  Band 3 observations are used to fill the queue when no Band 1 or 2
+% programs are available.  Successful Band 3 programs generally use poorer than
+% median observing conditions, have targets away from the most popular
+% regions of the sky, do not require strict timing or other constraints,
+% and do not require special instrument configurations.  You should describe
+% the changes you will make to the program to allow it to be successful in Band 3 in
+% the \bandthreeplan section, or write "This program is not suitable for band 3"
+% or "This is not a queue request". If a Band 3 allocation is acceptable and
+% the total Band 3 time request is different from the standard request, then
+% give the Band 3 time request for each partner. and update the time requested
+%  from each site.
+
+\bandthreeplan
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CLASSICAL PROGRAM INFORMATION
+% If you are applying for classical time on Gemini, please enter ``Y'' in the
+% curly braces of the \classical command; otherwise enter ``N''.  Classical
+% proposals should define a backup program in case the weather is worse than
+% the observing conditions in the proposal.  Enter your classcial backup
+% in the \classicalbackup section.
+
+\classicalbackup
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% DUPLICATE OBSERVATIONS
+% A search of the Gemini Observatory Archive
+% (https://archive.gemini.edu) will reveal whether
+% Gemini has previously been used to observe your targets using similar or
+% identical observing setups.  If there are duplicate observations, please
+% justify why new observations should be taken in the \justifyduplications
+% section.  If the Archive search finds no duplicates, please enter
+% ``The GOA search revealed no duplicate observations''.
+
+\justifyduplications
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ITC Attachments
+%
+
+% Use the Gemini Integration Time Calculator (ITC) for a typical source for each
+% instrument requested, see
+% http://www.gemini.edu/sciops/instruments/integration-time-calculators
+% Save the ITC output as a PDF file and include that in this section. The ITC pages
+% will not count against the page limits.  You may either merge the ITC PDF output
+% to the PDF version of this document or include the ITC PDF output
+% using \includepdf, eg.
+%
+% \includepdf[pages={-}]{ITCoutput.pdf}
+%
+% See the PIT FAQ (http://www.gemini.edu/node/11087/) for additional suggestions.
+
+\itcresults
+
+We used the exposure time calculator from the IGRINS At Gemini website:
+https://sites.google.com/site/igrinsatgemini/proposing-and-observing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please do not modify or delete this line.
+\end{document}
