@@ -1,0 +1,10 @@
+data/TESS_targets/
+data/TESS_programs/
+data/BD*
+data/
+
+results/
+
+notebooks/
+
+.envrc
