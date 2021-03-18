@@ -16,3 +16,8 @@ Here we analyze spot-check the IGRINS spectra from Gemini South, prep them for a
 ### 4. IGRINS spectral decomposition
 
 We conduct MCMC-based spectral inference on all spectra.
+
+
+### 9. [deprecated]
+
+Failed experiments or notebooks that have outlived their useful period can be moved here.
