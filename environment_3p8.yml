@@ -1,0 +1,33 @@
+name: acdc_3p8
+channels:
+  - defaults
+  - conda-forge
+  - astropy
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - matplotlib
+  - astropy=4.1
+  - astroquery # from conda-forge
+  - beautifulsoup4
+  - requests
+  - tqdm
+  - lightkurve # from conda-forge
+  - pandas
+  - oktopus # from conda-forge channel
+  - bokeh=2.2.3 # optional
+  - jupyter
+  - ipython
+  - cython
+  - scikit-learn
+  - scikit-image
+  - h5py
+  - black
+  - seaborn
+  - astroplan
+  - pip
+  - pip:
+      - corner
+      - tess-point
+      - celerite2
