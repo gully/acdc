@@ -10,3 +10,5 @@ notebooks/
 .envrc
 
 proposal/2021A/nymg/final/*.pdf
+
+.DS_Store
