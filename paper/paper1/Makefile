@@ -9,6 +9,9 @@ all: ms.pdf
 	rm -rf *.aux
 	rm -rf *.out
 	rm -rf *.blg
+	rm -rf *.fdb_latexmk
 	rm -rf *.dvi
+	rm -rf *.fls
+	rm -rf *.synctex.gz
 	mv ms.pdf final/
 	open final/ms.pdf
