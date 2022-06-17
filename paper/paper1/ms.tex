@@ -23,7 +23,7 @@
 
 \begin{abstract}
 
-Abstract goes here.
+  Abstract goes here.
 
 \end{abstract}
 
@@ -31,14 +31,14 @@ Abstract goes here.
 
 \section{Introduction}\label{sec:intro}
 
-Here is an annotated bibliography. 
+Here is an annotated bibliography.
 
 Here is some more text! Here is $\vec y=a \vec x^2+b \vec x + c$
 
 \begin{deluxetable}{chc}
   \tablecaption{Annotated bibliography for intro\label{table1}}
   \tablehead{
-  \colhead{Reference} & \nocolhead{two} & \colhead{Key idea}
+    \colhead{Reference} & \nocolhead{two} & \colhead{Key idea}
   }
   \startdata
   \citet{gullysantiago17} & - & LkCa~4 starspot spectral decomposition\\
@@ -48,12 +48,20 @@ Here is some more text! Here is $\vec y=a \vec x^2+b \vec x + c$
   \enddata
 \end{deluxetable}
 
-\newpage
+\section{Data and Observations}
+\subsection{TESS}
+TESS data...
+
+\begin{figure}[htb]
+  \epsscale{1.0}
+  \plotone{figures/UCAC2_7201471_TESS_visits.png}
+  \caption{\label{TESS_UCAC2} TESS lightcurve with IGRINS visits shown.}
+\end{figure}
 
 \begin{acknowledgements}
-This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
+  This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
 
-The authors acknowledge the Texas Advanced Computing Center (TACC, \url{http://www.tacc.utexas.edu}) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper.
+  The authors acknowledge the Texas Advanced Computing Center (TACC, \url{http://www.tacc.utexas.edu}) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper.
 \end{acknowledgements}
 
 \clearpage
@@ -73,7 +81,7 @@ The authors acknowledge the Texas Advanced Computing Center (TACC, \url{http://w
   starfish \citep{czekala15},
   bokeh \citep{bokehcite},
   seaborn \citep{waskom14}}
-  %pytorch \citep{NEURIPS2019_9015}} % No pytorch yet!
+%pytorch \citep{NEURIPS2019_9015}} % No pytorch yet!
 
 
 \bibliography{ms}
