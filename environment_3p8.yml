@@ -2,21 +2,21 @@ name: acdc_3p8
 channels:
   - defaults
   - conda-forge
-  - astropy
 dependencies:
   - python=3.8
   - numpy
   - scipy
   - matplotlib
-  - astropy=4.1
+  - astropy
   - astroquery # from conda-forge
   - beautifulsoup4
   - requests
   - tqdm
+  - specutils>=1.7
   - lightkurve # from conda-forge
   - pandas
   - oktopus # from conda-forge channel
-  - bokeh=2.2.3 # optional
+  - bokeh # optional
   - jupyter
   - ipython
   - cython
@@ -29,5 +29,5 @@ dependencies:
   - pip
   - pip:
       - corner
-      - tess-point
+      - emcee
       - celerite2
