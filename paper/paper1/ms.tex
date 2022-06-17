@@ -7,6 +7,7 @@
 % \setmainfont{Fira Sans Book}[Scale=1.0]
 
 \usepackage[caption=false]{subfig}
+\usepackage{censor}
 \usepackage{booktabs}
 
 \begin{document}
@@ -48,9 +49,9 @@ Here is some more text! Here is $\vec y=a \vec x^2+b \vec x + c$
   \enddata
 \end{deluxetable}
 
-\section{Data and Observations}
+\section{Observations and Data Reduction}
 \subsection{TESS}
-TESS data...
+We programmatically acquired lightcurves from the Transiting Exoplanet Survey Satellite \citep[TESS;][]{2014SPIE.9143E..20R} via the \texttt{lightkurve} Python library \citep{2018ascl.soft12013L}.  All \censorbox{7?} sources had at least one sector of TESS data available in the Full Frame Image (FFI) data.  Targets UCAC2~7201471 and \censorbox{other targets...} also had 2 minute cadence data available.  For these 2-minute cadence data we retrieve the Science Processing Operations Center (SPOC) lightcurves which have already undergone data quality assurance checks \citep{2020RNAAS...4..201C}.  For the FFI data, such quality assurance checks are not automatically applied, so we visually inspect the raw lightcurves, and apply standard masking for quality flags and obvious instrumental artifacts.  These lightcurves show such conspicuous signal strengths, that advanced lightcurve processing was not needed, and the raw flux time series can be used with minimal postprocessing.  Figure \ref{TESS_UCAC2} shows the TESS lightcurve for the target UCAC2~7201471.
 
 \begin{figure}[htb]
   \epsscale{1.0}
@@ -60,6 +61,8 @@ TESS data...
 
 \begin{acknowledgements}
   This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
+
+  This research made use of Lightkurve, a Python package for Kepler and TESS data analysis \citep{2018ascl.soft12013L}.
 
   The authors acknowledge the Texas Advanced Computing Center (TACC, \url{http://www.tacc.utexas.edu}) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper.
 \end{acknowledgements}
