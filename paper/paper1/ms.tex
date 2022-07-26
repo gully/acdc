@@ -53,6 +53,51 @@ Here is some more text! Here is $\vec y=a \vec x^2+b \vec x + c$
 \subsection{TESS}
 We programmatically acquired lightcurves from the Transiting Exoplanet Survey Satellite \citep[TESS;][]{2014SPIE.9143E..20R} via the \texttt{lightkurve} Python library \citep{2018ascl.soft12013L}.  All \censorbox{7?} sources had at least one sector of TESS data available in the Full Frame Image (FFI) data.  Targets UCAC2~7201471 and \censorbox{other targets...} also had 2 minute cadence data available.  For these 2-minute cadence data we retrieve the Science Processing Operations Center (SPOC) lightcurves which have already undergone data quality assurance checks \citep{2020RNAAS...4..201C}.  For the FFI data, such quality assurance checks are not automatically applied, so we visually inspect the raw lightcurves, and apply standard masking for quality flags and obvious instrumental artifacts.  These lightcurves show such conspicuous signal strengths, that advanced lightcurve processing was not needed, and the raw flux time series can be used with minimal postprocessing.  Figure \ref{TESS_UCAC2} shows the TESS lightcurve for the target UCAC2~7201471.
 
+\begin{rotatetable}
+  \pagestyle{empty}
+  \begin{deluxetable*}{lccCcccCccc}
+    \centering
+    \tablecaption{Properties of the sample\label{table2}}
+    \tabletypesize{\scriptsize}
+    \setlength{\tabcolsep}{0.04in}
+    \tablewidth{0pt}
+    \rotate
+    \tablehead{
+      \colhead{Source} &
+      \colhead{Sp.T.\tablenotemark{a}} &
+      \colhead{Membership} &
+      \colhead{Distance} &
+      \colhead{$T_\mathrm{eff}$\tablenotemark{b}} &
+      \colhead{$\log{g}$} &
+      \colhead{$[\mathrm{Fe}/\mathrm{H}]$} &
+      \colhead{$RV$} &
+      \colhead{$L_\star$} &
+      \colhead{$N_\mathrm{IGRINS}$} &
+      \colhead{References}\\
+      \colhead{} &
+      \colhead{} &
+      \colhead{} &
+      \colhead{(pc)} &
+      \colhead{(K)} &
+      \colhead{} &
+      \colhead{} &
+      \colhead{km/s} &
+      \colhead{$L_\odot$} &
+      \colhead{(\#)} &
+      \colhead{}
+    }
+    \startdata
+    UCAC2 7201471 & M2 & COL & 85.3\pm0.1 & 3511 & 4.2 & -0.37 & x         & - & 6 & GF18, GDR3\\
+    V* V1249 Cen (TWA 25) & M0.5 & TWA & 53.6\pm0.1 & -    & -   & -     & 6.1\pm1.6 & - & 5 & SZB03, HH14, GDR3\\
+    \enddata
+  \end{deluxetable*}
+\end{rotatetable}
+\tablecomments{This table lists physical properties for the sample as compiles from literature sources.}
+\tablenotetext{a}{Spectral Type classification, usually in the visible wavelengths}
+\tablenotetext{b}{Coarse estimates, typically from Gaia DR3}
+\tablerefs{(GF18) \citet{2018ApJ...862..138G}; (GDR3) \citet{2016A&A...595A...1G} Gaia Collaboration, A. Vallenari, et al. (2022j); (SZB03) \citet{2003ApJ...599..342S}, (HH14) \citet{herczeg14}}
+
+
 \begin{figure}[htb]
   \epsscale{1.0}
   \plotone{figures/UCAC2_7201471_TESS_visits.png}
@@ -68,6 +113,11 @@ IGRINS acquired \censorbox{35?} individual spectra of 7 objects in Gemini South 
   This research made use of Lightkurve, a Python package for Kepler and TESS data analysis \citep{2018ascl.soft12013L}.
 
   The authors acknowledge the Texas Advanced Computing Center (TACC, \url{http://www.tacc.utexas.edu}) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper.
+
+  This work has made use of data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC,\url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC
+  has been provided by national institutions, in particular the institutions
+  participating in the {\it Gaia} Multilateral Agreement.
+
 \end{acknowledgements}
 
 \clearpage
