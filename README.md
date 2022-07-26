@@ -6,6 +6,8 @@ Multi-epoch IGRINS analysis of spotted Nearby Young Moving Group members with co
 
 - Michael Gully-Santiago (UT Austin)
 - Ben Montet (UNSW)
+- 
+- Sujay Shankar (UT Austin)
 
 ### Installation:
 
