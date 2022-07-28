@@ -53,6 +53,8 @@ Here is some more text! Here is $\vec y=a \vec x^2+b \vec x + c$
 \subsection{TESS}
 We programmatically acquired lightcurves from the Transiting Exoplanet Survey Satellite \citep[TESS;][]{2014SPIE.9143E..20R} via the \texttt{lightkurve} Python library \citep{2018ascl.soft12013L}.  All \censorbox{7?} sources had at least one sector of TESS data available in the Full Frame Image (FFI) data.  Targets UCAC2~7201471 and \censorbox{other targets...} also had 2 minute cadence data available.  For these 2-minute cadence data we retrieve the Science Processing Operations Center (SPOC) lightcurves which have already undergone data quality assurance checks \citep{2020RNAAS...4..201C}.  For the FFI data, such quality assurance checks are not automatically applied, so we visually inspect the raw lightcurves, and apply standard masking for quality flags and obvious instrumental artifacts.  These lightcurves show such conspicuous signal strengths, that advanced lightcurve processing was not needed, and the raw flux time series can be used with minimal postprocessing.  Figure \ref{TESS_UCAC2} shows the TESS lightcurve for the target UCAC2~7201471.
 
+\clearpage
+
 \begin{rotatetable}
   \pagestyle{empty}
   \begin{deluxetable*}{lccCCCcCccc}
@@ -61,7 +63,7 @@ We programmatically acquired lightcurves from the Transiting Exoplanet Survey Sa
     \tabletypesize{\scriptsize}
     \setlength{\tabcolsep}{0.04in}
     \tablewidth{0pt}
-    \rotate
+    %\rotate
     \tablehead{
       \colhead{Source} &
       \colhead{Sp.T.\tablenotemark{a}} &
@@ -88,8 +90,12 @@ We programmatically acquired lightcurves from the Transiting Exoplanet Survey Sa
     }
     \startdata
     UCAC2 7201471 & M2 & COL & 85.3\pm0.1 & 3511 & 4.2 & -0.37 & x         & - & 6 & GF18, GDR3\\
-    V* V1249 Cen (TWA 25) & M0.5 & TWA & 53.6\pm0.1 & -    & -   & -     & 6.1\pm1.6 & - & 5 & SZB03, HH14, GDR3\\
+    V* V1249 Cen (TWA 25) & M0.5 & TWA & 53.6\pm0.1 & -    & -   & -     & 6.1\pm1.6 & - & 2 & SZB03, HH14, GDR3\\
     HD 49855 (HIP 32235) & G6V & CAR & 55.31\pm0.05 & 5399\pm4 & 4.45 & -0.07 & 20.658 & - & 5 & T06, GDR3 \\
+    TYC 8534-1243-1 & - & - & - & - & - & - & - & - & 5 & T06, GDR3 \\
+    V* V479 Car & - & - & - & - & - & - & - & - & 5 & GDR3 \\
+    %2MASS J12271665-6239142 & - & - & - & - & - & - & - & - & 1 & GDR3 \\
+    %CD-62 657 & - & - & - & - & - & - & - & - & 1 & GDR3 \\
     \enddata
   \end{deluxetable*}
 \end{rotatetable}
@@ -107,6 +113,39 @@ We programmatically acquired lightcurves from the Transiting Exoplanet Survey Sa
 
 \subsection{IGRINS}
 IGRINS acquired \censorbox{35?} individual spectra of 7 objects in Gemini South semester 2021A under program ID \texttt{GS-2021A-Q-311}.
+
+
+\section{Results}
+
+\begin{deluxetable}{lcccc}
+  \centering
+  \tablecaption{Derived properties\label{table3}}
+  \tablehead{
+    \colhead{} &
+    \colhead{TESS} &
+    \colhead{TESS} &
+    \colhead{ASASSN $V$} &
+    \colhead{ASASSN $g$} \\
+    \colhead{Source} &
+    \colhead{Period} &
+    \colhead{Amplitude} &
+    \colhead{Amplitude} &
+    \colhead{Amplitude} \\
+    \colhead{} &
+    \colhead{(d)} &
+    \colhead{(\%)} &
+    \colhead{(\%)} &
+    \colhead{(\%)}
+  }
+  \startdata
+  UCAC2 7201471 & - & - & - & - \\
+  V* V1249 Cen & - & - & - & -\\
+  HD 49855 & - & - & - & -\\
+  TYC 8534-1243-1 & - & - & - & -\\
+  V* V479 Car & - & - & - & -\\
+  \enddata
+\end{deluxetable}
+\tablecomments{Amplitudes are defined as flux losses from the normalized peak.}
 
 \begin{acknowledgements}
   This paper includes data collected by the TESS mission. Funding for the TESS mission is provided by the NASA's Science Mission Directorate.
